@@ -1,0 +1,11 @@
+severity:		
+Limits results by the severity of the interactions. May be major, moderate, or minor.
+
+minor: observe and adjust
+These medications may interact in a clinically significant manner. However, the benefit of using these medications usually outweighs any risks. The medications may or may not require a dose adjustment and monitoring.
+
+moderate: adjustment should be considered
+The benefits of continuing the medication should be evaluated on an individual basis. Actions such as observing, changing the dose, or changing the medications may be considered.
+
+major: combination should be avoided
+This combination may cause more harm than benefit and alternative medications should be considered.

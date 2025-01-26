@@ -1,0 +1,36 @@
+# Stage 1: Build the Python backend
+FROM python:3.9-slim AS backend
+
+# Set the working directory
+WORKDIR /app
+
+# Copy Python requirements
+COPY requirements.txt /app/
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the backend app files
+COPY app.py /app/
+COPY config.yaml /app/
+
+# Expose Flask port
+EXPOSE 3000
+
+# Command to run Flask
+CMD ["python", "app.py"]
+
+# Stage 2: Build the frontend
+FROM nginx:alpine AS frontend
+
+# Set the working directory
+WORKDIR /usr/share/nginx/html
+
+# Copy the frontend files
+COPY frontend_app/ /usr/share/nginx/html/
+
+# Expose Nginx port
+EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]

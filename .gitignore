@@ -1,0 +1,56 @@
+# Python-related files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+instance/
+venv
+
+# Flask-related files
+*.log
+*.sqlite3
+*.db
+
+# Frontend-related files
+frontend_app/node_modules/
+frontend_app/dist/
+frontend_app/.cache/
+*.css.map
+*.js.map
+
+# Docker-related files
+*.dockerignore
+Dockerfile.*
+docker-compose.yml
+.docker/
+docker-compose.override.yml
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencies
+env/
+venv/
+ENV/
+.Python
+
+# Miscellaneous
+*.bak
+*.tmp
+*.old
+*.orig
+
+# Logs and debug files
+logs/
+*.log
+
+# Project sencetive sensitive data and configuration
