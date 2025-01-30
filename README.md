@@ -64,3 +64,9 @@ MedicalDrugChecker/
 
 - **Frontend:** Open your browser and go to http://localhost:8080.
 - **Backend API:** Test endpoints at http://localhost:3000.
+
+5. **Config file chang**:
+
+- **config.yaml** Change:
+ollama:
+  api_url: http://your.own.api
